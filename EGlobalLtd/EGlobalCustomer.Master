@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EGlobalCustomer.master.cs" Inherits="EGlobalLtd.EGlobalCustomer" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="style.css" rel="stylesheet" />
+    <title>Customer page of E-Global Ltd.</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="homepage">
+    <!-- Header -->
+    <div id="menu-wrapper">
+	    <div id="menu">
+		    <ul>
+			    <li class="current_page_item"><a href="IndexCustomer.aspx"">Homepage</a></li>
+				<li><a href="ProfileCustomer.aspx">My profile</a></li>
+				<li><a href="Products.aspx">My Items</a></li>
+				<li><a href="MyOrders.aspx">My order</a></li> 
+				<li><a href="MyCart.aspx">My cart</a></li>
+				<li><a href="ChangePassword.aspx">Change Password</a></li>
+				<li><a href="LogoutPage.aspx">Sign out</a></li>
+		    </ul>
+	    </div>
+	    <!-- end #menu --> 
+    </div>
+    <div id="header-wrapper">
+	    <div id="header">
+		    <div id="logo">
+			    <h1><a href="IndexCustomer.aspx">E-Global Ltd.</a></h1>
+			    <p>Brought to you by - <a href="index.aspx" rel="nofollow">Masud</a></p>
+		    </div>
+	    </div>
+    </div>
+    <!-- end #header -->
+    
+       
+		<!-- Page Wrapper -->
+		<div id="wrapper" class="container">
+
+			<!-- Banner Content -->
+			<div id="banner" class="rowcustomer">
+				<div class="12u">
+					<section class="auto-style1"><a href="IndexCustomer.aspx""><img src="images/Img02.jpg" alt="" height="30" width="60"/></a></section>
+				</div>
+			</div>
+
+            <!-- Page Content -->
+            <form id="formCustMaster" runat="server">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderCustomer" runat="server">
+                        <div class="auto-style1">
+                        </div>
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>
+            <!-- Page Content Ends here-->
+
+		</div>
+		<!-- Wrapper Ends Here -->
+	
+		<!-- Copyright -->
+		<div id="copyright">
+                <div class="auto-style1">
+        <asp:HyperLink ID="hprLnkNav" runat="server" NavigateUrl="~/SiteMapNavCust.aspx" ForeColor="#0066CC">Navigation Map</asp:HyperLink>
+    </div>  
+			<div class="auto-style1">
+				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+			    &amp; Masud</div>
+		</div>
+   
+</body>
+</html>

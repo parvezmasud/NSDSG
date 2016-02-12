@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EGlobalLtd.master.cs" Inherits="EGlobalLtd.EGlobalLtd" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="style.css" rel="stylesheet" />
+    <title>E-Global Ltd.</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="homepage">
+    <!-- Header -->
+    <div id="menu-wrapper">
+	    <div id="menu">
+		    <ul>
+			    <li class="current_page_item"><a href="../index.aspx">Homepage</a></li>
+				<li><a href="../Register.aspx">Register</a></li>
+                <li><a href="../LoginPage.aspx">Sign in</a></li>
+		    </ul>
+	    </div>
+	    <!-- end #menu --> 
+    </div>
+    <div id="header-wrapper">
+	    <div id="header">
+		    <div id="logo">
+			    <h1><a href="#">E-Global Ltd.</a></h1>
+			    <p>Brought to you by - <a href="Index.aspx" rel="nofollow">Masud</a></p>
+		    </div>
+	    </div>
+    </div>
+    <!-- end #header -->
+
+			<!-- Banner Content -->
+			<div id="banner" class="rowcustomer">
+				<div class="12u">
+					<section class="auto-style1"><a href="Index.aspx""><img src="images/Img02.jpg" alt="" height="30" width="60"/></a></section>
+				</div>
+			</div>    <div id="wrapper"> 
+	    <div id="page">
+		    <div id="page-bgtop">
+			    <div id="page-bgbtm">
+
+				        <!-- Page Content -->
+                    <form id="formMain" runat="server">
+                        <div>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+        
+
+
+                                <div class="auto-style1">
+                                </div>
+        
+
+                                
+                            </asp:ContentPlaceHolder>
+
+
+                        </div>
+                    </form>
+                    <!-- Page Content Ends here-->
+				    <div style="clear: both;">&nbsp;</div>
+			    </div>
+		    </div>
+	    </div>
+	    <!-- end #page --> 
+    </div>
+<div id="footer">
+    <div class="auto-style1">
+        <asp:HyperLink ID="hprLnkNav" runat="server" NavigateUrl="~/SiteMapNav.aspx" ForeColor="#0066CC">Navigation Map</asp:HyperLink>
+    </div>    
+	<p>&copy; Untitled. | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED & MASUD</a>.</p>
+</div>
+<!-- end #footer -->
+	
+		
+</body>
+</html>

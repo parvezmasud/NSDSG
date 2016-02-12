@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode title="E-Global Ltd"  description="Welcome to the Future World">
+        <siteMapNode url="index.aspx" title="Homepage of E-Global Ltd"  description="Home page of E-Global" />
+        <siteMapNode url="register.aspx" title="User Registration Page"  description="To register a user" />
+        <siteMapNode url="LoginPage.aspx" title="Login Page"  description="Login">            
+          <siteMapNode title="Admin"  description="Area of Admin Access">
+              <siteMapNode url="IndexAdmin.aspx" title="Home Page with Product for Admin"  description="Products in the Market" />
+              <siteMapNode url="ProfileAdmin.aspx" title="Profile of Admin"  description="Profile of Admin" />
+              <siteMapNode url="ProductList.aspx" title="Product List"  description="Products added by al Customers" />
+              <siteMapNode url="Customers.aspx" title="Customers List"  description="Customer List and Modifications" />
+              <siteMapNode url="OrderProcess.aspx" title="Process Customer Orders"  description="Processing Orders" />
+          </siteMapNode>  
+          <siteMapNode title="Customer"  description="Area of Customers Access">
+              <siteMapNode url="IndexCustomer.aspx" title="Home Page with Product for Customer"  description="Products in the Market" />
+              <siteMapNode url="ProfileCustomer.aspx" title="Profile of Customer"  description="Profile of Customer" />
+              <siteMapNode url="Products.aspx" title="My Products"  description="Customers Product list" />
+              <siteMapNode url="MyCart.aspx" title="Customers Shopping Cart"  description="Customer Shopping Cart Area" />
+              <siteMapNode url="MyOrders.aspx" title="Customer Orders"  description="Customers Order Area" />
+              <siteMapNode url="ChangePassword.aspx" title="Change password of Customer"  description="Change password of Customer" />
+           </siteMapNode>
+          <siteMapNode title="Account Logout"  description="Account Logout">
+            <siteMapNode url="LogoutPage.aspx" title="Logout"  description="Account Logout" />
+          </siteMapNode>
+          <siteMapNode title="Forget Password"  description="Can't Access My Account">
+            <siteMapNode url="~/UserPassword/ResetPassword.aspx" title="Reset Password"  description="Account Password Reset" />
+          </siteMapNode>
+        </siteMapNode>       
+    </siteMapNode>
+</siteMap>
